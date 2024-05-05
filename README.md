@@ -1,6 +1,11 @@
 # TriviaEQ
 Making a simple quiz app using Kotlin on Android Studio
 
+## Intention
+* add MCQs with single correct answers
+* get the questions from the backend
+* show score at the end 
+
 ## Changes i did
 ### adapting the latest view binding concept
 to-be-updated
