@@ -35,7 +35,6 @@ class MainActivity : ComponentActivity() {
                 startActivity(intent)
                 finish()
             }
-            // EN
         }
     }
 }
