@@ -8,6 +8,7 @@ import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.ImageView
+import android.widget.ProgressBar
 import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.ComponentActivity
@@ -72,7 +73,10 @@ class QuizQuestionsActivity : ComponentActivity(), View.OnClickListener {
         }
 
         var quiz_binding = ActivityQuizQuestionsBinding.inflate(layoutInflater)
-        quiz_binding.progressBar.progress = mCurrentPos
+//        quiz_binding.progressBar.progress = mCurrentPos
+
+        val progressBarUpdate: ProgressBar = findViewById(R.id.progressBar) as ProgressBar
+        progressBarUpdate.progress = mCurrentPos
 
         val textView: TextView = findViewById(R.id.tv_progress) as TextView
         textView.text = "$mCurrentPos"+ "/" +quiz_binding.progressBar.max
