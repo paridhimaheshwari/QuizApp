@@ -32,6 +32,7 @@ class MainActivity : ComponentActivity() {
             } else {
 
                 val intent = Intent(this@MainActivity, QuizQuestionsActivity::class.java)
+                intent.putExtra(Constants.USER_NAME, binding.etName.text.toString())
                 startActivity(intent)
                 finish()
             }
